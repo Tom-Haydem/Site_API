@@ -1,0 +1,74 @@
+{
+    "packages": [
+        {
+            "name": "mikecao/flight",
+            "version": "v3.0.2",
+            "version_normalized": "3.0.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/flightphp/core.git",
+                "reference": "4955f39e0de538817012621a189d765792abc394"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/flightphp/core/zipball/4955f39e0de538817012621a189d765792abc394",
+                "reference": "4955f39e0de538817012621a189d765792abc394",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "php": "^7.4|^8.0|^8.1|^8.2|^8.3"
+            },
+            "require-dev": {
+                "ext-pdo_sqlite": "*",
+                "phpstan/extension-installer": "^1.3",
+                "phpstan/phpstan": "^1.10",
+                "phpunit/phpunit": "^9.5"
+            },
+            "suggest": {
+                "latte/latte": "Latte template engine"
+            },
+            "time": "2024-01-11T23:32:41+00:00",
+            "type": "library",
+            "installation-source": "source",
+            "autoload": {
+                "files": [
+                    "flight/autoload.php",
+                    "flight/Flight.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mike Cao",
+                    "email": "mike@mikecao.com",
+                    "homepage": "http://www.mikecao.com/",
+                    "role": "Original Developer"
+                },
+                {
+                    "name": "Franyer Sánchez",
+                    "email": "franyeradriansanchez@gmail.com",
+                    "homepage": "https://faslatam.000webhostapp.com",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "n0nag0n",
+                    "email": "n0nag0n@sky-9.com",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Flight is a fast, simple, extensible framework for PHP. Flight enables you to quickly and easily build RESTful web applications. This is the maintained fork of mikecao/flight",
+            "homepage": "http://flightphp.com",
+            "support": {
+                "issues": "https://github.com/flightphp/core/issues",
+                "source": "https://github.com/flightphp/core/tree/v3.0.2"
+            },
+            "install-path": "../mikecao/flight"
+        }
+    ],
+    "dev": true,
+    "dev-package-names": []
+}

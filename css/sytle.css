@@ -1,0 +1,115 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; 
+}
+
+/* PAGE D'ACCUEIL POUR UN UTILISATEUR NON CONNECTÉ */
+.login-container {
+    text-align: center;
+}
+
+.login-button {
+    background-color: #1DB954; /* Vert Spotify */
+    color: white;
+    font-size: 2em;
+    padding: 20px 60px;
+    border: none;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.login-button:hover, .login-button:focus {
+    background-color: #1ED760; /* Vert plus clair pour l'effet hover */
+    transform: scale(1.05); /* Légèrement plus grand au survol */
+}
+
+@media (max-width: 768px) {
+    .login-button {
+        font-size: 1.5em;
+        padding: 10px 40px;
+    }
+}
+
+
+/* PAGE D'ACCUEIL POUR UN UTILISATEUR CONNECTÉ */
+
+.user-info {
+    text-align: center;
+    margin-top: 50px;
+    flex-direction: column; /* Empile les éléments verticalement */
+    align-items: center; /* Centre horizontalement */
+    justify-content: center; /* Centre verticalement */
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #282828; /* Couleur de fond de l'encadré */
+    padding: 15px;
+    border-radius: 8px; /* Coins arrondis de l'encadré */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Ombre portée pour l'encadré */
+    display: flex;
+    gap: 15px; /* Espace entre l'image et le texte */
+}
+
+.user-info .user-img img { /* Sélectionner l'élément img à l'intérieur de .profil-img */
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #1DB954;
+    cursor: pointer;
+}
+
+.user-info .user-display-name h1 a {
+    font-size: 4rem; /* Augmenter la taille de la police pour le nom d'utilisateur */
+    margin-top: 20px; /* Ajouter un peu d'espace au-dessus du nom d'utilisateur */
+}
+
+.user-info .user-product a{
+    font-size: 1rem; /* Taille du texte pour le type de compte */
+    color: white; /* Couleur du texte pour le type de compte */
+}
+
+
+/* TABLEAU artistes favoris */
+.left-panel {
+    position: absolute; /* ou fixe */
+    padding: 15px;
+    top: 20px;
+    left: 20px;
+    overflow-y: scroll; /* pour ajouter un défilement si le tableau est trop long */
+    background-color: #282828; /* Couleur de fond de l'encadré */
+    border-radius: 8px; /* Coins arrondis de l'encadré */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Ombre portée pour l'encadré */
+}
+
+.artists-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.artists-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.artists-table th{
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+
+#artist-image {
+    width: 30px; /* ou la taille que vous souhaitez */
+    height: 30px;
+    border-radius: 50%; /* Cela crée le cercle */
+    object-fit: cover; /* Cela assure que l'image couvre tout le cercle sans être déformée */
+    border: 1px solid #fff; /* Optionnel, ajoute une bordure blanche si vous le souhaitez */
+}
